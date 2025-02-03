@@ -40,6 +40,7 @@ jobs:
         with:
           name: build-artifacts  # MUST match the upload name
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          artifact-dir: ./published
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./published
