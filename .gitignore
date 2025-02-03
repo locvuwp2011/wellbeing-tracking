@@ -1,0 +1,14 @@
+# Ignore build directories
+bin/
+obj/
+
+# Ignore specific build files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.user
+*.csproj.user
+*.suo
+*.sln.docstates
